@@ -25,7 +25,7 @@ def main(etcdctl_peers, host, service_name):
 
     click.secho("Writing key %s" % key, fg='green')
     try:
-        value = etcd.read(key=key)
+        value = etcd.read(key=key).value
     except EtcdKeyNotFound:
         value = '{}'
 

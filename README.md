@@ -1,5 +1,7 @@
 # Vulcanizer
 
+[![Docker Repository on Quay.io](https://quay.io/repository/panubo/vulcanizer/status "Docker Repository on Quay.io")](https://quay.io/repository/panubo/vulcanizer)
+
 [Vulcand](http://vulcand.io) frontend updater for [Etcd](https://github.com/coreos/etcd).
 
 ## Usage

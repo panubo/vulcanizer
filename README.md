@@ -1,6 +1,6 @@
 # Vulcanizer
 
-[VulcanD](http://vulcand.io) frontend updater for [EtcD](https://github.com/coreos/etcd).
+[Vulcand](http://vulcand.io) frontend updater for [Etcd](https://github.com/coreos/etcd).
 
 ## Usage
 

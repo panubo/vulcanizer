@@ -11,7 +11,7 @@ from etcd import Client, EtcdKeyNotFound, EtcdConnectionFailed
 @click.option('--etcdctl-peers', default='http://127.0.0.1:4001', help="ETCD peers list", envvar='ETCDCTL_PEERS')
 @click.option('--host', required=True, help="Virtual Host Server Name", envvar='VHOST_SERVER_NAME')
 @click.option('--service-name', required=True, help="Service Name", envvar='SERVICE_NAME')
-@click.option('--backend', required=True, help="Backend ID", envvar='BACKEND')
+@click.option('--backend', required=False, help="Backend ID", envvar='BACKEND')
 def main(etcdctl_peers, host, service_name, backend):
     etcd_url = urlparse(etcdctl_peers)
     etcd = Client(host=etcd_url.hostname, port=etcd_url.port)
